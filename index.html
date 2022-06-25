@@ -11,7 +11,7 @@
   <body>
       <h1> My Happy Form </h1>
       <form>
-        <input type="text" placeholder="First Name" id="fname"> <input type="text" placeholder="Last Name" id="lname">
+        <input type="text" placeholder="First Name" id="fname" onkeyup="isEmpty()"> <input type="text" placeholder="Last Name" id="lname" onkeyup="isEmpty()">
         <br> <br> 
         <textarea name="comments" rows="3"></textarea>
       </form>
@@ -19,7 +19,7 @@
         <br>
       <input type="text" placeholder="Enter your email">
     </h5>
-    <button onclick="alertMessage()"> Submit </button>
+    <button onclick="alertMessage()" id="submit" disabled> Submit </button>
 	<script src="app.js"></script>
   </body>
 </html>
