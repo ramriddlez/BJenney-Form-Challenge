@@ -15,3 +15,14 @@ function isEmpty() {
         document.getElementById("submit").removeAttribute("disabled")
     }
 }
+
+
+function enableBox() {
+    let checkbox = document.getElementById("check")
+
+    if(checkbox.style.display === "block"){
+        checkbox.style.display = "none";
+    } else {
+        checkbox.style.display = "block"
+    }
+}
