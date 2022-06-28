@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Brian Form Challenge</title>
     <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-      <h1> My Happy Form </h1>
-      <form>
-        <input type="text" placeholder="First Name" id="fname" onkeyup="isEmpty()"> <input type="text" placeholder="Last Name" id="lname" onkeyup="isEmpty()">
-        <br> <br> 
-        <textarea name="comments" rows="3"></textarea>
-      </form>
-      <h5> Subscribe to newsletter <input type="checkbox" onclick="enableBox()"> 
-        <br>
-      <input type="text" placeholder="Enter your email" id="check" >
-    </h5>
-    <button onclick="alertMessage()" id="submit" disabled> Submit </button>
-	<script src="app.js"></script>
-  </body>
+</head>
+
+<body>
+    <h1> My Happy Form </h1>
+    <form id="review-form">
+        <input type="text" placeholder="First Name" id="fname" onkeyup="isEmpty()"> <input type="text"
+            placeholder="Last Name" id="lname" onkeyup="isEmpty()">
+        <br> <br>
+        <textarea name="comments" rows="3" id="comment"></textarea>
+        <h5> Subscribe to newsletter <input type="checkbox" onclick="enableBox()">
+            <br>
+            <input type="text" placeholder="Enter your email" id="check">
+        </h5>
+        <button onclick="alertMessage()" id="submit" disabled> Submit </button>
+        <h6 id="submission"></h6>
+    </form>
+    <script src="app.js" src="index.js"></script>
+</body>
+
 </html>
